@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Добави нова рецепта"
+                    android:id="@+id/textView6"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Име"
+                    android:ems="10"
+                    android:id="@+id/editTextIme"
+                    android:layout_below="@+id/textView6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="42dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:hint="Време"
+                    android:ems="10"
+                    android:id="@+id/editTextVreme"
+                    android:layout_below="@+id/editTextIme"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Брой порции"
+                    android:ems="10"
+                    android:id="@+id/editTextBroi"
+                    android:layout_below="@+id/editTextVreme"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Продукти"
+                    android:id="@+id/produktiBtn"
+                    android:layout_below="@+id/editTextBroi"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="selectProducts" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Избрани:"
+                    android:id="@+id/textView8"
+                    android:layout_alignTop="@+id/editTextProdukti"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/editTextProdukti"
+                    android:text=""
+                    android:layout_below="@+id/produktiBtn"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:layout_alignRight="@+id/editTextBroi"
+                    android:layout_alignEnd="@+id/editTextBroi" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNachin"
+                    android:hint="Начин на приготвяне"
+                    android:layout_below="@+id/produktiBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Направи снимка"
+                    android:id="@+id/napraviSnimkaBtn"
+                    android:layout_below="@+id/editTextNachin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="takePhoto" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewPhoto"
+                    android:layout_below="@+id/napraviSnimkaBtn"
+                    android:layout_centerHorizontal="true"
+                    android:minHeight="200dp"
+                    android:minWidth="300dp" />
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запиши"
+            android:id="@+id/zapishiBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="zapishi" />
+    </RelativeLayout>
+</ScrollView>

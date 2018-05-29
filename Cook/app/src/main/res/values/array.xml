@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="my_products_selection">
+        <item>Домат</item>
+        <item>Краставица</item>
+        <item>Чушка</item>
+        <item>Лук</item>
+        <item>Сол</item>
+        <item>Черен пипер</item>
+        <item>Телешки стек</item>
+        <item>Сирене</item>
+        <item>Картоф</item>
+        <item>Тиквичка</item>
+        <item>Олио</item>
+        <item>Ананас</item>
+        <item>Банан</item>
+        <item>Портокал</item>
+        <item>Канела</item>
+
+
+
+    </string-array>
+
+</resources>
