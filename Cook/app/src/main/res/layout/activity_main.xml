@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.martin28.cook.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Списък"
+        android:id="@+id/spisukBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="111dp"
+        android:layout_alignRight="@+id/imamBtn"
+        android:layout_alignEnd="@+id/imamBtn"
+        android:layout_alignLeft="@+id/imamBtn"
+        android:layout_alignStart="@+id/imamBtn"
+        android:onClick="openSpisuk" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имам..."
+        android:id="@+id/imamBtn"
+        android:layout_above="@+id/spisukBtn"
+        android:layout_alignLeft="@+id/lubimiBtn"
+        android:layout_alignStart="@+id/lubimiBtn"
+        android:layout_alignRight="@+id/lubimiBtn"
+        android:layout_alignEnd="@+id/lubimiBtn"
+        android:onClick="openImam" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Любими рецепти"
+        android:id="@+id/lubimiBtn"
+        android:layout_above="@+id/imamBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="openLubimi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мои рецепти"
+        android:id="@+id/moiBtn"
+        android:layout_above="@+id/lubimiBtn"
+        android:layout_alignRight="@+id/lubimiBtn"
+        android:layout_alignEnd="@+id/lubimiBtn"
+        android:layout_alignLeft="@+id/lubimiBtn"
+        android:layout_alignStart="@+id/lubimiBtn"
+        android:onClick="openMoiRecepti" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рецепти"
+        android:id="@+id/receptiBtn"
+        android:layout_above="@+id/moiBtn"
+        android:layout_alignRight="@+id/lubimiBtn"
+        android:layout_alignEnd="@+id/lubimiBtn"
+        android:layout_alignLeft="@+id/lubimiBtn"
+        android:layout_alignStart="@+id/lubimiBtn"
+        android:onClick="openRecepti" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Меню"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
